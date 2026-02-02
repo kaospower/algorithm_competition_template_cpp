@@ -1,2 +1,3 @@
-# algorithm_competition_template_cpp
-algorithm competition template using cpp
+# algorithm_competition_template
+chaospower's algorithm competition template using python
+test
