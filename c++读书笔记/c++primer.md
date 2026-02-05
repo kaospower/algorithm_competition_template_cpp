@@ -175,6 +175,23 @@ const int ci=i;
 const auto f=ci;
 ```
 
+# 2.5.3 The decltype Type Specifier
+decltype:
+从一个表达式推断类型但是不用那个表达式初始化当前变量
+```c++
+decltype(f()) sum=x;
+```
+decltype((v)) is always a reference type,but decltype(v) is a reference type only if variable is a reference.  
+
+# 2.6 Defining the Sales_data Type
+
+# 2.6.3 Writing Our Own Header Files
+The most common technique for making it safe to include a header multiple times relies on the preprocessor.  
+C++ programs also use the preprocessor to define header guards.  
+The #define directive takes a name and defines that name as a preprocessor variable.  
+\#ifdef is true if the variable has been defined,and #ifndef is true if the variable has not been defined.  
+If the test is true,then everything following the #ifdef or #ifndef is processed up to teh matching #endif.
+
 # Chapter 3 Strings,Vectors, and Arrays  
 
 # 3.1 Namespace using Declarations  
