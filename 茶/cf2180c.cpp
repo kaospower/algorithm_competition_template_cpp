@@ -3,6 +3,7 @@
 //
 
 //猜想,构造
+//https://codeforces.com/problemset/problem/2180/C
 #include <bits/stdc++.h>
 
 using namespace std;
