@@ -163,9 +163,18 @@ const pstring* ps;//ps is a pointer to a const pointer to char,const pstring is 
 ```
 # 2.5.2 The auto Type Specifier
 主要用于存储表达式形式的变量,可以让编译器根据初始化信息推断表达式类型  
+使用auto的变量必须要初始化
 ```c++
 auto i=0,*p=&i;//auto 声明多个变量时,它们类型需要一致
 ```
+auto ordinarily ignores top-level consts,low-level consts are kept.
+If we want the deduced type to have a top-level const,we must say so explicitly:
+```c++
+int i=0;
+const int ci=i;
+const auto f=ci;
+```
+
 # Chapter 3 Strings,Vectors, and Arrays  
 
 # 3.1 Namespace using Declarations  
